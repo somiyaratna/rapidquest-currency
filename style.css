@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;700;800;900&display=swap");
+
+:root {
+  --primary-color: #4935ff;
+  --secondary-color: #84aeff;
+  --primary-gray: #adadad;
+  --bg-gray: #f0f0f0;
+  --text-color: #000;
+  --bold: 900;
+  --semi-bold: 800;
+  --light-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  border: none !important;
+  outline: none;
+  font-family: "Noto Sans", sans-serif;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body,
+.user-details,
+.strategy {
+  background-color: var(--bg-gray);
+}
+
+.active {
+  background: var(--primary-color);
+  box-shadow: var(--primary-color) 0.2rem 0.2rem 0.75rem 0.1rem;
+}
+
+.line-below {
+  border-bottom: 1px solid var(--primary-color) !important;
+}
+
+#doughnut-chart-container {
+  display: flex;
+  justify-content: space-around;
+  justify-self: end;
+  /* width: 60%; */
+}
+
+#doughnut-chart-container div {
+  height: 10rem;
+  width: 10rem;
+}
+
+.slider::-webkit-slider-runnable-track {
+  background-color: #85afff;
+  height: 2px;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none !important;
+  height: 1rem !important;
+  width: 1rem !important;
+  background-color: #1bd768 !important;
+  border-radius: 50%;
+  margin-top: -6px;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
